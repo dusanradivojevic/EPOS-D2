@@ -10,13 +10,30 @@ form {
 .navbar-nav {
     display: table;
     width: 100%;
-    margin: 0;
+	margin: 0;
+	
 }
 
 .navbar-nav > li{
     float: none;
     display: table-cell;
-    text-align: center;
+	text-align: center;
+}
+
+.navbar-nav  p{
+	font-size: 20px;
+	/* font-weight: bold; */
+	margin: 0px 5px 0px 5px;
+}
+
+.navbar-nav  li:hover{
+	background-color: rgb(129, 129, 129);
+	
+}
+
+#aktivan p{
+	font-size: 23px;
+	color: black;
 }
 
 footer p{
@@ -104,9 +121,10 @@ body {
 
 
 /* USLUGE */
+/*
 .usluge {
 	display: flex;
-	/* horizontalno centriranje */
+	// horizontalno centriranje 
 	justify-content: center;
 }
 
@@ -128,9 +146,23 @@ body {
 	margin: 0 auto;
 	width: 350px;
 	height: 150px;
-}
+}*/
 
 /* Naslovne vesti */
+
+.naslovneVesti h1{
+	margin-left: 50px;
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+.naslovneVesti hr {
+	border-color: black;
+	margin-left: 30px;
+	border-width: 2px;
+	margin-top: 0;
+	width: 15%;
+}
 
 .vest {
 	padding: 10px 20px;
