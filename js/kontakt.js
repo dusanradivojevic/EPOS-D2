@@ -13,7 +13,6 @@ function resetujPolja() {
     document.forms[0].mail.style.border = "1px solid grey";
     document.forms[0].adresa.style.border = "1px solid grey";
     document.forms[0].vrstaKvara.style.border = "1px solid grey";
-
 }
 
 function sakrijBox(param) {
@@ -56,8 +55,12 @@ function validacija() {
     }
 
     if (greska == true) {
+        alert("Greška prilikom unosa podataka!")
         return false;
     } else {
+        alert("Uspešno ste prijavili kvar!\nKvar će biti otklonjen u najkraćem mogućem roku!" );
+        pripremiFormu();
+        document.forms[0].reset();
         return true;
     }
 }

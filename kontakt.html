@@ -71,27 +71,28 @@
             Kontakt telefon:
             <input type="text" name="brTel">
             <br><br>
-            <br>
             Unesite e-mail adresu:
             <br>
             <input type="text" name="mail" size="35">
             <br><br>
             Izaberite vrstu kvara:<br><br>
-            <input type="radio" name="vrstaKvara" value="k1"> Kanalizacioni kvar
-            <input type="radio" name="vrstaKvara" value="k2"> Kvar na vodovodnoj mreži
+
+            <input type="radio" name="vrstaKvara" value="k1">Kvar na kanalizacionoj mreži
+            <input type="radio" name="vrstaKvara" value="k2">Kvar na vodovodnoj mreži
+         
             <br><br>Opis kvara:
-            <br>
-            <textarea name="area" rows="5" cols="20">
+            <textarea name="opis" rows="5" cols="20">
 
             </textarea>
             <br><br>
             Upload slike:
             <br>
-            <INPUT type="file" name="file">
+            <INPUT type="file" class="btn btn-outline-primary" name="file">
             <br>
             <br>
-            <INPUT type="button" value="Prijavi kvar" name="submit" onclick="validacija()">
-            <INPUT type="reset" value="Obrisi podatke" name="reset">
+
+            <INPUT type="button" class="btn btn-outline-primary" value="Prijavi kvar" name="submit" onclick="validacija()">
+            <INPUT type="reset" class="btn btn-outline-primary" value="Obrisi podatke" name="reset">
         </form>
     </div>
 
