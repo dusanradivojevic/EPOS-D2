@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" type="text/css" href="css/index.css" media="all" />
     <!-- jQuery -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src = "js/jQuery.js"></script>
     <!-- FlexSlider -->
     <script type="text/javascript" src="js/javascript2.js"></script>
     <script type="text/javascript" charset="utf-8">
@@ -39,6 +39,35 @@
         });
     </script>
 
+    <!--Efekat zumiranja-->
+	<script>
+	$(Document).ready(function(){
+	
+		$("#aktivan").hover(function(){
+            $("#aktivan").stop().animate({"zoom":"150%"}, 1000);
+        }, function(){
+            $("#aktivan").stop().animate({"zoom":"100%"}, 1000); 
+		})
+		
+		$("#1").hover(function(){
+            $("#1").stop().animate({"zoom":"150%"}, 1000);
+        }, function(){
+            $("#1").stop().animate({"zoom":"100%"}, 1000); 
+		})
+		
+		$("#3").hover(function(){
+            $("#3").stop().animate({"zoom":"150%"}, 1000);
+        }, function(){
+            $("#3").stop().animate({"zoom":"100%"}, 1000); 
+		})
+		
+		$("#4").hover(function(){
+            $("#4").stop().animate({"zoom":"150%"}, 1000);
+        }, function(){
+            $("#4").stop().animate({"zoom":"100%"}, 1000); 
+        })
+	});
+	</script>
 </head>
 
 <body>
@@ -46,7 +75,7 @@
         <div class="jumbotron jumbotron-fluid" style="background-image: url(img/ovo.jpg); background-size: 100%;" id="jumbo">
             <div class="container-fluid">
                 <h1 class="display-4">VODOVOD </h1>
-                <p class="lead">Beograd</p>
+                <!-- <p class="lead">Beograd</p> -->
 
             </div>
         </div>
@@ -59,17 +88,17 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Naslovna <span class="sr-only">(current)</span></a>
+                    <li class="nav-item" id="1">
+                        <a class="nav-link" href="index.html"></a><p>Naslovna</p> <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Galerija</a>
+                    <li class="nav-item active" id="aktivan">
+                        <a class="nav-link" href="#"><p>Galerija</p></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="onama.html">O nama</a>
+                    <li class="nav-item" id="3">
+                        <a class="nav-link" href="onama.html"><p>O nama</p></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="kontakt.html">Kontakt</a>
+                    <li class="nav-item" id="4">
+                        <a class="nav-link" href="kontakt.html"><p>Kontakt</p></a>
                     </li>
                 </ul>
             </div>

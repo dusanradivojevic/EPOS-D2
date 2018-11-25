@@ -12,6 +12,37 @@
         crossorigin="anonymous">
     <script src="kontakt.js"></script>
     <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <!--Efekat zumiranja-->
+    <script src = "js/jQuery.js"></script>
+	<script>
+	$(Document).ready(function(){
+	
+		$("#aktivan").hover(function(){
+            $("#aktivan").stop().animate({"zoom":"150%"}, 1000);
+        }, function(){
+            $("#aktivan").stop().animate({"zoom":"100%"}, 1000); 
+		})
+		
+		$("#2").hover(function(){
+            $("#2").stop().animate({"zoom":"150%"}, 1000);
+        }, function(){
+            $("#2").stop().animate({"zoom":"100%"}, 1000); 
+		})
+		
+		$("#3").hover(function(){
+            $("#3").stop().animate({"zoom":"150%"}, 1000);
+        }, function(){
+            $("#3").stop().animate({"zoom":"100%"}, 1000); 
+		})
+		
+		$("#1").hover(function(){
+            $("#1").stop().animate({"zoom":"150%"}, 1000);
+        }, function(){
+            $("#1").stop().animate({"zoom":"100%"}, 1000); 
+        })
+	});
+	</script>
 </head>
 
 <body onload="pripremiFormu()">
@@ -22,7 +53,7 @@
         <div class="jumbotron jumbotron-fluid" style="background-image: url(img/ovo.jpg); background-size: 100%;" id="jumbo">
             <div class="container-fluid">
                 <h1 class="display-4">VODOVOD </h1>
-                <p class="lead">Beograd</p>
+                <!-- <p class="lead">Beograd</p> -->
 
             </div>
         </div>
@@ -35,17 +66,17 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Naslovna <span class="sr-only">(current)</span></a>
+                    <li class="nav-item" id="1">
+                        <a class="nav-link" href="index.html"><p>Naslovna</p> <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="galerija.html">Galerija</a>
+                    <li class="nav-item" id="2">
+                        <a class="nav-link" href="galerija.html"><p>Galerija</p></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="onama.html">O nama</a>
+                    <li class="nav-item" id="3">
+                        <a class="nav-link" href="onama.html"><p>O nama</p></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Kontakt</a>
+                    <li class="nav-item active" id="aktivan">
+                        <a class="nav-link" href="#"><p>Kontakt</p></a>
                     </li>
                 </ul>
             </div>

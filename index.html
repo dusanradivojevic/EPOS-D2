@@ -12,7 +12,37 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	<script src = "js/jQuery.js"></script>
+	<script>
+	$(Document).ready(function(){
+	
+		$("#aktivan").hover(function(){
+            $("#aktivan").stop().animate({"zoom":"150%"}, 1000);
+        }, function(){
+            $("#aktivan").stop().animate({"zoom":"100%"}, 1000); 
+		})
+		
+		$("#2").hover(function(){
+            $("#2").stop().animate({"zoom":"150%"}, 1000);
+        }, function(){
+            $("#2").stop().animate({"zoom":"100%"}, 1000); 
+		})
+		
+		$("#3").hover(function(){
+            $("#3").stop().animate({"zoom":"150%"}, 1000);
+        }, function(){
+            $("#3").stop().animate({"zoom":"100%"}, 1000); 
+		})
+		
+		$("#4").hover(function(){
+            $("#4").stop().animate({"zoom":"150%"}, 1000);
+        }, function(){
+            $("#4").stop().animate({"zoom":"100%"}, 1000); 
+        })
+	});
+	</script>
 </head>
 
 <body>
@@ -36,17 +66,17 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Naslovna <span class="sr-only">(current)</span></a>
+					<li class="nav-item active" id="aktivan">
+                        <a class="nav-link" href="#"><p>Naslovna</p> <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="galerija.html">Galerija</a>
+                    <li class="nav-item" id="2">
+                        <a class="nav-link" href="galerija.html"><p>Galerija</p></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="onama.html">O nama</a>
+                    <li class="nav-item" id="3">
+                        <a class="nav-link" href="onama.html"><p>O nama</p></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="kontakt.html">Kontakt</a>
+                    <li class="nav-item" id="4"> 
+                        <a class="nav-link" href="kontakt.html"><p>Kontakt</p></a>
                     </li>
                 </ul>
             </div>
