@@ -10,20 +10,17 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-    <script src="kontakt.js"></script>
+    <script src="js/kontakt.js"></script>
     <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 
-<body onload="pripremiFormu()">
+<body onLoad="pripremiFormu()">
 
     <header>
-
-
         <div class="jumbotron jumbotron-fluid" style="background-image: url(img/ovo.jpg); background-size: 100%;" id="jumbo">
             <div class="container-fluid">
-                <h1 class="display-4">VODOVOD </h1>
+                <h1 class="display-4">VODOVOD</h1>
                 <p class="lead">Beograd</p>
-
             </div>
         </div>
 
@@ -60,17 +57,19 @@
         <h3 align="center">Prijavi kvar na mreži</h3>
         <br>
 
-        <div id="greska" class="alert-box">
-            Forma sadrži sledeće greške:
-        </div>
+        <form onsubmit="return validacija()">
 
-        <form>          
-            
+            <br>
+            <div id="greska" class="alert-box">
+                Forma sadrži sledeće greške:
+            </div>
+            <br>
+
             Adresa:
             <input type="text" name="adresa">
             <br><br>
             Kontakt telefon:
-            <input type="text" name="brTel"> 
+            <input type="text" name="brTel">
             <br><br>
             <br>
             Unesite e-mail adresu:
@@ -84,8 +83,6 @@
             <br>
             <textarea name="area" rows="5" cols="20">
 
-
-
             </textarea>
             <br><br>
             Upload slike:
@@ -95,7 +92,6 @@
             <br>
             <INPUT type="button" value="Prijavi kvar" name="submit" onclick="validacija()">
             <INPUT type="reset" value="Obrisi podatke" name="reset">
-
         </form>
     </div>
 
