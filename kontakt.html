@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="images/x-ico" href="img/kapljica-ikona.ico">
+    <title>Vodovod</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="kontakt.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body onload="pripremiFormu()">
+
+    <header>
+
+
+        <div class="jumbotron jumbotron-fluid" style="background-image: url(img/ovo.jpg); background-size: 100%;" id="jumbo">
+            <div class="container-fluid">
+                <h1 class="display-4">VODOVOD </h1>
+                <p class="lead">Beograd</p>
+
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-end">
+            <!-- <a class="navbar-brand" href="#">Meni</a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Naslovna <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galerija.html">Galerija</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="onama.html">O nama</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <div>
+        <br>
+        <br>
+        <h3 align="center">Prijavi kvar na mreži</h3>
+        <br>
+
+        <div id="greska" class="alert-box">
+            Forma sadrži sledeće greške:
+        </div>
+
+        <form>          
+            
+            Adresa:
+            <input type="text" name="adresa">
+            <br><br>
+            Kontakt telefon:
+            <input type="text" name="brTel"> 
+            <br><br>
+            <br>
+            Unesite e-mail adresu:
+            <br>
+            <input type="text" name="mail" size="35">
+            <br><br>
+            Izaberite vrstu kvara:<br><br>
+            <input type="radio" name="vrstaKvara" value="k1"> Kanalizacioni kvar
+            <input type="radio" name="vrstaKvara" value="k2"> Kvar na vodovodnoj mreži
+            <br><br>Opis kvara:
+            <br>
+            <textarea name="area" rows="5" cols="20">
+
+
+
+            </textarea>
+            <br><br>
+            Upload slike:
+            <br>
+            <INPUT type="file" name="file">
+            <br>
+            <br>
+            <INPUT type="button" value="Prijavi kvar" name="submit" onclick="validacija()">
+            <INPUT type="reset" value="Obrisi podatke" name="reset">
+
+        </form>
+    </div>
+
+    <footer>
+        <p align="center">Made by: MDN</p>
+    </footer>
+</body>
+
+</html>

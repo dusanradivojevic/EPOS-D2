@@ -1,0 +1,472 @@
+h1{
+    font-size: 50px;
+}
+
+form { 
+	margin: 0 auto; 
+	width:250px;
+}
+
+.navbar-nav {
+    display: table;
+    width: 100%;
+    margin: 0;
+}
+
+.navbar-nav > li{
+    float: none;
+    display: table-cell;
+    text-align: center;
+}
+
+footer p{
+    color: blue;
+}
+
+body {
+	font-family: 'Questrial', sans-serif;
+	margin: 0;
+	line-height: 1.5;
+	background-color: #fdfdfd;
+}
+
+* {
+	/* da bi se u visinu/duzinu elementa racunali padding i border */
+	box-sizing: border-box;
+}
+
+
+.jumbotron {
+	background-image: url('./img/ovo.jpg');
+	width: 100%;
+	padding: 50px;
+	padding-bottom: 15%;
+	max-width: 100vw;
+    background-attachment: fixed;
+    color: blue;
+}
+
+.jumbotron-content {
+	color: white;
+	padding-left: 30px;
+	padding-top: 10%;
+	font-size: 18px;
+	/* z-index: 999; */
+}
+
+.jumbotron h1 {
+	margin: 0;
+	font-size: 64px;
+	letter-spacing: 3px;
+	font-family: 'Anton', sans-serif;
+	text-shadow: 0 0 5px black;
+}
+
+.jumbotron p {
+	font-size: 20px;
+	color: blue;
+	text-shadow: 0 0 5px white;
+}
+
+/* MENI */
+
+.meni {
+	z-index: 990;
+	position: absolute;
+	top: 0;
+	right: 50px;
+}
+
+.meni ul {
+	list-style-type: none;
+}
+
+.meni li {
+	display: inline-block;
+}
+
+.meni a {
+	font-size: 18px;
+	color: white;
+	padding: 5px 15px;
+	border-radius: 10px;
+	text-decoration: none;
+}
+
+.meni a:hover {
+	text-decoration: underline;
+}
+
+/* da tekst i elementi ne bi bili odmah to ivica ekrana */
+.container {
+	padding: 20px;
+}
+
+
+/* USLUGE */
+.usluge {
+	display: flex;
+	/* horizontalno centriranje */
+	justify-content: center;
+}
+
+.usluga {
+	border-radius: 5px;
+	padding: 10px;
+	margin: 5px;
+	max-width: 30%;
+	transition: 0.6s;
+}
+
+.usluga:hover {
+	box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
+	background-color: #fff;
+}
+
+.usluga img {
+	display: block;
+	margin: 0 auto;
+	width: 350px;
+	height: 150px;
+}
+
+/* Naslovne vesti */
+
+.vest {
+	padding: 10px 20px;
+	margin: 10px;
+	border-radius: 5px;
+}
+
+.vest {
+	display: flex;
+	justify-content: space-between;
+	transition: 0.6s;
+	cursor: pointer;
+	padding: 20px;
+}
+
+.vest-slika {
+	display: flex;
+	align-items: center;
+}
+
+.vest img {
+	max-height: 300px;
+	max-width: 300px;
+}
+
+.flex-reverse {
+	flex-direction: row-reverse;
+}
+
+.vest:hover {
+	box-shadow: 0 5px 10px rgb(0, 174, 255), 0 5px 10px rgb(0, 174, 255);
+}
+
+.vest>div {
+	padding: 0 20px;
+}
+
+.vest a {
+	float: right;
+}
+
+.flex-reverse a {
+	float: none;
+}
+
+
+
+.clanovi {
+	display: flex;
+	justify-content: space-around;
+	padding: 3% 0;
+}
+
+.clan {
+	background-color: white;
+	box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
+	border-radius: 12px;
+	cursor: pointer;
+	transition: 0.6s;
+}
+
+.clan img {
+	border-top-right-radius: 12px;
+	border-top-left-radius: 12px;
+	width: 300px;
+	height: 210px;
+}
+
+.clan span {
+	display: inline;
+	color: #4d4d4d;
+}
+
+h1 {
+	margin-bottom: 5px;
+}
+
+.clan:hover {
+	box-shadow: 0 20px 35px rgba(50, 50, 93, .2), 0 8px 15px rgba(0, 0, 0, .1);
+}
+
+.clan h2 {
+	margin: 10px 0;
+}
+
+a.link {
+	display: inline;
+	text-align: right;
+	color: #00adcc;
+	float: right;
+	transition: 0.6s;
+}
+
+a.link:hover {
+	color: #00d9ff;
+}
+
+a.link:hover i {
+	transition: 1s;
+	animation: slide 0.3s infinite;
+	animation-direction: alternate;
+}
+
+@keyframes slide {
+	from {
+		transform: translateX(0);
+	}
+
+	to {
+		transform: translateX(20%);
+	}
+}
+
+.fas {
+	font-size: 10px;
+}
+
+.info {
+	padding: 5px 20px 20px;
+}
+
+.text-faded,
+p {
+	color: #4d4d4d
+}
+
+hr {
+	border-color: black;
+	border-width: 2px;
+	width: 15%;
+}
+
+.projekat img {
+	border-radius: 12px;
+	max-height: 100%;
+}
+
+#menu-icon,
+#close-icon {
+	display: none;
+}
+
+/* KONTAKT FORMA */
+form {
+	background-color: white;
+	box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
+	padding: 20px;
+	width: 45%;
+}
+
+input,
+label {
+	display: block;
+}
+
+label {
+	font-size: 22px;
+}
+
+input,
+textarea {
+	padding: 5px;
+	border: 0;
+	border-bottom: 2px solid #00adcc;
+}
+
+input:focus {
+	border-color: transparent;
+	box-shadow: 0 5px 8px rgba(50, 50, 93, .1);
+
+}
+
+.kontakt input,
+.kontakt textarea {
+	width: 100%;
+	margin: 10px 0;
+}
+
+.kontakt button {
+	background-color: #00adcc;
+	border: 0;
+	color: #fff;
+	width: 100%;
+	font-size: 20px;
+	padding: 15px;
+}
+
+footer {
+	padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+	.jumbotron {
+		background-size: cover;
+		background-position: right;
+	}
+
+	.usluge,
+	.clanovi {
+		flex-direction: column;
+	}
+
+	.usluge img {
+		max-width: 100%;
+	}
+
+	.clan img {
+		width: 100%;
+	}
+
+	.clan {
+		margin: 10px;
+	}
+
+	.projekat {
+		flex-direction: column;
+	}
+
+	.projekat img {
+		max-width: 100%;
+	}
+
+	.usluga {
+		max-width: 100%;
+	}
+
+
+	.meni {
+		display: none;
+		width: 100vw;
+		height: 100vh;
+		font-size: 26px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background-color: black;
+		padding-top: 25%;
+	}
+
+	.meni li {
+		display: block;
+	}
+
+	.meni li a {
+		font-size: 42px;
+	}
+
+	form {
+		width: 100%;
+	}
+
+	#menu-icon,
+	#close-icon {
+		display: block;
+		position: absolute;
+		top: 2%;
+		right: 5%;
+		color: white;
+
+	}
+
+	#close-icon {
+		z-index: 9999;
+		position: fixed;
+		display: none;
+	}
+
+	
+}
+
+.alert-box {
+	background:#ffecec no-repeat 10px 50%;
+    border:1px solid #f5aca6;
+    color:#555;
+    border-radius:10px;
+    font-family:Tahoma,Geneva,Arial,sans-serif;font-size:11px;
+    padding:10px 10px 10px 36px;
+	margin:10px;
+	visibility: hidden;
+}
+
+/* Slider
+http://www.freshdesignweb.com/fashion-responsive-slider-tutorial.html
+*/
+/* Slider
+/*-----------------------------------------------------------------------------------*/
+.slider_container{ width:920px; margin:auto; clear:both; background:url(images/shadow_top.png) no-repeat top center; padding:30px 0 0 0;}
+.flex-caption{ position: absolute; right:11px; bottom:20px;}
+.caption_title_line{ width:450px; height:75px; padding:5px 15px 10px 15px;background:url(images/slider_caption_bg.png) repeat;color: #303030;}
+.flex-caption h2{ color:#303030;font-size:20px; padding:5px 0 5px 0; margin:0px;font-family: 'Ovo', serif;}
+
+.flex-container a:active,
+.flexslider a:active {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
+
+/* FlexSlider Necessary Styles
+*********************************/ 
+.flexslider {width: 100%; margin: 0; padding: 0 0 30px 0;background:url(images/shadow_bottom.png) no-repeat center bottom;}
+.flexslider .slides > li {display: none;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {max-width: 100%; display: block; border:10px #ededed solid;}
+.flex-pauseplay span {text-transform: capitalize;}
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .slides {display: block;} 
+* html .slides {height: 1%;}
+.no-js .slides > li:first-child {display: block;}
+.flexslider {position: relative; zoom: 1;}
+.flexslider .slides {zoom: 1;}
+.flexslider .slides > li {position: relative;}
+.flex-container {zoom: 1; position: relative;}
+
+/* Direction Nav */
+.flex-direction-nav li a {width:45px; height:42px; margin:0; display: block; position: absolute; right:11px; cursor: pointer; text-indent: -9999px;}
+.flex-direction-nav li a.next {background:url(images/next.png) no-repeat center; bottom:184px;}
+.flex-direction-nav li a.prev {background:url(images/prev.png) no-repeat center;bottom:141px;}
+.flex-direction-nav li a.next:hover {background:url(images/next_a.png) no-repeat center;}
+.flex-direction-nav li a.prev:hover {background:url(images/prev_a.png) no-repeat center;}
+.flex-direction-nav li a.disabled {opacity: .3; filter:alpha(opacity=30); cursor: default;}
+
+/* Control Nav */
+.flex-control-nav {width: 100%; position: absolute; bottom: -30px; text-align: center;}
+.flex-control-nav li {margin: 0 0 0 5px; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-nav li:first-child {margin: 0;}
+.flex-control-nav li a {width: 13px; height: 13px; display: block; cursor: pointer; text-indent: -9999px;}
+.flex-control-nav li a:hover {background-position: 0 -13px;}
+.flex-control-nav li a.active {background-position: 0 -26px; cursor: default;}
+
+/* Media Queries
+/*-----------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1000px) {
+.slider_container{ width:90%; margin:0 0 0 2%; clear:both; background:none; padding:30px 0 0 0;}
+.flexslider {width: 100%; margin: 0; padding:0 0 30px 0;background:none;}
+.flex-direction-nav li a {width:45px; height:42px; margin:0; display: block; position: absolute; right:-10px; cursor: pointer; text-indent: -9999px;}
+.flex-direction-nav li a.next {background:url(images/next.png) no-repeat center; bottom:85px;}
+.flex-direction-nav li a.prev {background:url(images/prev.png) no-repeat center;bottom:40px;}
+.flex-caption { display:none;}
+}

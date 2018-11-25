@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="images/x-ico" href="img/kapljica-ikona.ico">
+    <title>Vodovod</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" media="all" />
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <!-- FlexSlider -->
+    <script type="text/javascript" src="js/javascript2.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        var $ = jQuery.noConflict();
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "fade"
+            });
+
+            $(function () {
+                $('.show_menu').click(function () {
+                    $('.menu').fadeIn();
+                    $('.show_menu').fadeOut();
+                    $('.hide_menu').fadeIn();
+                });
+                $('.hide_menu').click(function () {
+                    $('.menu').fadeOut();
+                    $('.show_menu').fadeIn();
+                    $('.hide_menu').fadeOut();
+                });
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <div class="jumbotron jumbotron-fluid" style="background-image: url(img/ovo.jpg); background-size: 100%;" id="jumbo">
+            <div class="container-fluid">
+                <h1 class="display-4">VODOVOD </h1>
+                <p class="lead">Beograd</p>
+
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-end">
+            <!-- <a class="navbar-brand" href="#">Meni</a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Naslovna <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Galerija</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="onama.html">O nama</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontakt.html">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="slider_container">
+            <div class="flexslider">
+                <ul class="slides" align="center">
+                    <li>
+                        <img src="img/ajovo.jpg" height="300px" width="800px" alt="" title="" />
+
+                    </li>
+                    <li>
+                        <img src="img/ovo.jpg" height="300px" width="800px" alt="" title="" />
+
+                    </li>
+                    <li>
+                        <img src="img/vodovod-header.jpg" height="300px" width="800px" alt="" title="" />
+
+                    </li>
+                    <li>
+                        <img src="img/vest2.jpg" height="300px" width="800px" alt="" title="" />
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer>
+        <p align="center">Made by: MDN</p>
+    </footer>
+
+</body>
+
+
+</html>
