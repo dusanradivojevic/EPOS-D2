@@ -224,6 +224,7 @@ body {
 	transition: 0.6s;
 }
 
+/*
 .clan img {
 	border-top-right-radius: 12px;
 	border-top-left-radius: 12px;
@@ -235,11 +236,11 @@ body {
 	display: inline;
 	color: #4d4d4d;
 }
-
+*/
 h1 {
 	margin-bottom: 5px;
 }
-
+/*
 .clan:hover {
 	box-shadow: 0 20px 35px rgba(50, 50, 93, .2), 0 8px 15px rgba(0, 0, 0, .1);
 }
@@ -247,25 +248,27 @@ h1 {
 .clan h2 {
 	margin: 10px 0;
 }
-
+*/
 a.link {
 	display: inline;
-	text-align: right;
-	color: #00adcc;
+/*	text-align: right; 
+	color:black; */
 	float: right;
 	transition: 0.6s;
+    text-decoration: underline white;
 }
 
 a.link:hover {
-	color: #00d9ff;
+	text-decoration: underline white;
 }
 
+/*
 a.link:hover i {
 	transition: 1s;
 	animation: slide 0.3s infinite;
 	animation-direction: alternate;
 }
-
+*/
 @keyframes slide {
 	from {
 		transform: translateX(0);
@@ -351,7 +354,7 @@ input:focus {
 }
 
 footer {
-	padding: 20px;
+	/* padding: 20px; */
 }
 
 @media only screen and (max-width: 768px) {
