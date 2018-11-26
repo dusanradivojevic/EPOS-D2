@@ -55,4 +55,6 @@ html[xmlns] .slides {display: block;}
 .flex-direction-nav li a.next {background:url(images/next.png) no-repeat center; bottom:85px;}
 .flex-direction-nav li a.prev {background:url(images/prev.png) no-repeat center;bottom:40px;}
 .flex-caption { display:none;}
+
+
 }

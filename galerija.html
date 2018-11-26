@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="css/galerija.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/index.css" media="all" />
     <!-- jQuery -->
-    <script src = "http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.1.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.6.1.min.js"></script>
     <!-- FlexSlider -->
     <script type="text/javascript" src="js/javascript2.js"></script>
     <script type="text/javascript" charset="utf-8">
@@ -41,35 +41,35 @@
     </script>
 
     <!--Efekat zumiranja-->
-	<script>
-	$(Document).ready(function(){
-	
-		$("#aktivan").hover(function(){
-            $("#aktivan").stop().animate({"zoom":"150%"}, 1000);
-        }, function(){
-            $("#aktivan").stop().animate({"zoom":"100%"}, 1000); 
-		})
-		
-		$("#1").hover(function(){
-            $("#1").stop().animate({"zoom":"150%"}, 1000);
-        }, function(){
-            $("#1").stop().animate({"zoom":"100%"}, 1000); 
-		})
-		
-		$("#3").hover(function(){
-            $("#3").stop().animate({"zoom":"150%"}, 1000);
-        }, function(){
-            $("#3").stop().animate({"zoom":"100%"}, 1000); 
-		})
-		
-		$("#4").hover(function(){
-            $("#4").stop().animate({"zoom":"150%"}, 1000);
-        }, function(){
-            $("#4").stop().animate({"zoom":"100%"}, 1000); 
-        })
-	});
+    <script>
+        $(Document).ready(function () {
+
+            $("#aktivan").hover(function () {
+                $("#aktivan").stop().animate({ "zoom": "150%" }, 1000);
+            }, function () {
+                $("#aktivan").stop().animate({ "zoom": "100%" }, 1000);
+            })
+
+            $("#1").hover(function () {
+                $("#1").stop().animate({ "zoom": "150%" }, 1000);
+            }, function () {
+                $("#1").stop().animate({ "zoom": "100%" }, 1000);
+            })
+
+            $("#3").hover(function () {
+                $("#3").stop().animate({ "zoom": "150%" }, 1000);
+            }, function () {
+                $("#3").stop().animate({ "zoom": "100%" }, 1000);
+            })
+
+            $("#4").hover(function () {
+                $("#4").stop().animate({ "zoom": "150%" }, 1000);
+            }, function () {
+                $("#4").stop().animate({ "zoom": "100%" }, 1000);
+            })
+        });
     </script>
-    
+
 </head>
 
 <body>
@@ -91,16 +91,24 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item" id="1">
-                        <a class="nav-link" href="index.html"></a><p>Naslovna</p> <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.html">
+                        <p>Naslovna</p>
+                    </a>
                     </li>
                     <li class="nav-item active" id="aktivan">
-                        <a class="nav-link" href="#"><p>Galerija</p></a>
+                        <a class="nav-link" href="#">
+                            <p>Galerija</p>
+                        </a>
                     </li>
                     <li class="nav-item" id="3">
-                        <a class="nav-link" href="onama.html"><p>O nama</p></a>
+                        <a class="nav-link" href="onama.html">
+                            <p>O nama</p>
+                        </a>
                     </li>
                     <li class="nav-item" id="4">
-                        <a class="nav-link" href="kontakt.html"><p>Prijavi kvar</p></a>
+                        <a class="nav-link" href="kontakt.html">
+                            <p>Prijavi kvar</p>
+                        </a>
                     </li>
                 </ul>
             </div>
