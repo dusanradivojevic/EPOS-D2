@@ -190,22 +190,6 @@ body {
 	float: none;
 }
 
-
-
-.clanovi {
-	display: flex;
-	justify-content: space-around;
-	padding: 3% 0;
-}
-
-.clan {
-	background-color: white;
-	box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
-	border-radius: 12px;
-	cursor: pointer;
-	transition: 0.6s;
-}
-
 h1 {
 	margin-bottom: 5px;
 }
@@ -231,14 +215,6 @@ a.link:hover {
 	}
 }
 
-.fas {
-	font-size: 10px;
-}
-
-.info {
-	padding: 5px 20px 20px;
-}
-
 .text-faded,
 p {
 	color: #4d4d4d
@@ -248,11 +224,6 @@ hr {
 	border-color: black;
 	border-width: 2px;
 	width: 15%;
-}
-
-.projekat img {
-	border-radius: 12px;
-	max-height: 100%;
 }
 
 #menu-icon,
@@ -313,60 +284,6 @@ input:focus {
 		background-size: cover;
 		background-position: right;
 	}
-
-	.usluge,
-	.clanovi {
-		flex-direction: column;
-	}
-
-	form {
-		width: 100%;
-	}
-
-	.usluge img {
-		max-width: 100%;
-	}
-
-	.clan img {
-		width: 100%;
-	}
-
-	.clan {
-		margin: 10px;
-	}
-
-	.projekat {
-		flex-direction: column;
-	}
-
-	.projekat img {
-		max-width: 100%;
-	}
-
-	.usluga {
-		max-width: 100%;
-	}
-
-
-	.meni {
-		display: none;
-		width: 100vw;
-		height: 100vh;
-		font-size: 26px;
-		position: fixed;
-		top: 0;
-		left: 0;
-		background-color: black;
-		padding-top: 25%;
-	}
-
-	.meni li {
-		display: block;
-	}
-
-	.meni li a {
-		font-size: 42px;
-	}	
 
 	#menu-icon,
 	#close-icon {
