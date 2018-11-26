@@ -2,6 +2,10 @@ h1{
     font-size: 50px;
 }
 
+.sat{
+	color: #cc0000;
+}
+
 form { 
 	margin: 0 auto; 
 	width:250px;
@@ -36,10 +40,6 @@ form {
 	color: black;
 }
 
-footer p{
-    color: blue;
-}
-
 body {
 	font-family: 'Questrial', sans-serif;
 	margin: 0;
@@ -68,7 +68,6 @@ body {
 	padding-left: 30px;
 	padding-top: 10%;
 	font-size: 18px;
-	/* z-index: 999; */
 }
 
 .jumbotron h1 {
@@ -120,33 +119,6 @@ body {
 }
 
 
-/* USLUGE */
-/*
-.usluge {
-	display: flex;
-	// horizontalno centriranje 
-	justify-content: center;
-}
-
-.usluga {
-	border-radius: 5px;
-	padding: 10px;
-	margin: 5px;
-	max-width: 30%;
-	transition: 0.6s;
-}
-
-.usluga:hover {
-	box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07);
-	background-color: #fff;
-}
-
-.usluga img {
-	display: block;
-	margin: 0 auto;
-	width: 350px;
-	height: 150px;
-}*/
 
 /* Naslovne vesti */
 
@@ -224,36 +196,13 @@ body {
 	transition: 0.6s;
 }
 
-/*
-.clan img {
-	border-top-right-radius: 12px;
-	border-top-left-radius: 12px;
-	width: 300px;
-	height: 210px;
-}
-
-.clan span {
-	display: inline;
-	color: #4d4d4d;
-}
-*/
 h1 {
 	margin-bottom: 5px;
 }
-/*
-.clan:hover {
-	box-shadow: 0 20px 35px rgba(50, 50, 93, .2), 0 8px 15px rgba(0, 0, 0, .1);
-}
 
-.clan h2 {
-	margin: 10px 0;
-}
-*/
 a.link {
 	display: inline;
-/*	text-align: right; 
-	color:black; 
-	float: right;*/
+
 	transition: 0.6s;
     text-decoration: underline white;
 }
@@ -262,13 +211,6 @@ a.link:hover {
 	text-decoration: underline white;
 }
 
-/*
-a.link:hover i {
-	transition: 1s;
-	animation: slide 0.3s infinite;
-	animation-direction: alternate;
-}
-*/
 @keyframes slide {
 	from {
 		transform: translateX(0);
@@ -364,6 +306,10 @@ input:focus {
 		flex-direction: column;
 	}
 
+	form {
+		width: 100%;
+	}
+
 	.usluge img {
 		max-width: 100%;
 	}
@@ -428,10 +374,8 @@ input:focus {
 	
 }
 
+
 /* KONTAKT HTML */
-form {
-	width: 100%;
-}
 
 .alert-box {
 	background:#ffecec no-repeat 10px 50%;
@@ -470,4 +414,20 @@ h2 {
 	margin-left: 20%;
 	width: 60%;
 	height: 300px;
+}
+
+/* FOOTER */
+
+footer p{
+	color: #ffffff;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+footer{
+	height: 100%;
+	background-color: #2f2f2f;
+}
+
+.sat{
+	color: #00adcc;
 }

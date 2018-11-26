@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="css/index.css" >
+    <link rel="stylesheet" type="text/css" href="css/index.css">
 
     <!--Efekat zumiranja-->
     <script src="js/jQuery.js"></script>
@@ -43,9 +43,22 @@
             })
         });
     </script>
+
+    <script>
+        function prikaziSat() {
+            var datum = new Date();
+            var h = datum.getHours();
+            var m = datum.getMinutes();
+            var s = datum.getSeconds();
+
+            document.getElementById("sat").innerHTML = h + ":" + m + ":" + s;
+
+            setTimeout(prikaziSat, 1000); //vrti ga na svaku sekundu
+        }
+    </script>
 </head>
 
-<body>
+<body onload="prikaziSat()">
     <header>
 
 
@@ -82,7 +95,7 @@
                     </li>
                     <li class="nav-item" id="4">
                         <a class="nav-link" href="kontakt.html">
-                            <p>Kontakt</p>
+                            <p>Prijavi kvar</p>
                         </a>
                     </li>
                 </ul>
@@ -91,6 +104,7 @@
 
 
     </header>
+    <br>
     <div id="tekst-onama">
         <h2> JKP Beogradski vodovod i kanalizacija</h2>
         <br>
@@ -107,44 +121,47 @@
     </div>
     <div>
         <p id="kontakt">
-                Kontakt telefon: 011/2065 000
-                <br>
-                Faks: 011/3612 123<br>
-                Web adresa: www.bvk.rs<br>
-                E-mail: info@bvk.rs<br>
-                Banca Intesa : 160-6789-79<br>
-                UniCredit Bank Srbija a.d: 170-30019841000-41<br>
-                OTP Banka Srbija a.d: 325-9500700032854-88<br>
-                Matični broj: 07018762<br>
-                PIB: 100346317<br><br>
+            Kontakt telefon: 011/2065 000
+            <br>
+            Faks: 011/3612 123<br>
+            Web adresa: www.bvk.rs<br>
+            E-mail: info@bvk.rs<br>
+            Banca Intesa : 160-6789-79<br>
+            UniCredit Bank Srbija a.d: 170-30019841000-41<br>
+            OTP Banka Srbija a.d: 325-9500700032854-88<br>
+            Matični broj: 07018762<br>
+            PIB: 100346317<br><br>
         </p>
         <p id="naslov1">Vodovod</p>
         <img src="img/onama1.jpg" id="onama1">
         <br>
         <br>
         <p id="tekst-onama">
-                Beogradski vodovod godišnje proizvede preko 200 miliona kubnih metara vode u pet proizvodnih pogona: 
-                Makišu, Belim vodama, Banovom brdu, Bežaniji i Vinči. Na postrojenjima se prerađuje površinska sirova
-                 voda iz toka reke Save i podzemna voda iz njenog priobalja. Najmanje postrojenje Vinča prerađuje 
-                 površinsku sirovu vodu iz Dunava. Beogradski vodovod je složen vodoprivredni sistem, koji
-                  kvalitetnom, zdravstveno ispravnom vodom za piće snabdeva oko dva miliona Beograđana, 
-                  celokupnu privredu i komunalne sisteme grada. Pored pet proizvodnih pogona, vodovodni sistem, 
-                  između ostalog, čine i 149 bunara, 34 rezervoara, 35 crpnih stanica i 3.599 kilometara distributivne mreže.
+            Beogradski vodovod godišnje proizvede preko 200 miliona kubnih metara vode u pet proizvodnih pogona:
+            Makišu, Belim vodama, Banovom brdu, Bežaniji i Vinči. Na postrojenjima se prerađuje površinska sirova
+            voda iz toka reke Save i podzemna voda iz njenog priobalja. Najmanje postrojenje Vinča prerađuje
+            površinsku sirovu vodu iz Dunava. Beogradski vodovod je složen vodoprivredni sistem, koji
+            kvalitetnom, zdravstveno ispravnom vodom za piće snabdeva oko dva miliona Beograđana,
+            celokupnu privredu i komunalne sisteme grada. Pored pet proizvodnih pogona, vodovodni sistem,
+            između ostalog, čine i 149 bunara, 34 rezervoara, 35 crpnih stanica i 3.599 kilometara distributivne mreže.
         </p>
         <br>
         <p id="naslov1">Kanalizacija</p>
         <img src="img/onama2.jpg" id="onama2">
         <p id="tekst-onama">
-                <p id="tekst-onama">
-                        Beogradska kanalizacija obuhvata složen tehničko-tehnološki sistem koji se prostire na oko 180 
-                        kvadratnih kilometara površine grada. Bavi se prikupljanjem i odvođenjem atmosferskih i upotrebljenih 
-                        voda, održavanjem kanalizacione mreže, nadzorom, upravljanjem i održavanjem elektromašinskih postrojenja
-                         i ekološkim monitoringom zaštite kanalizacionog sistema i recipijenta. Kanalizacioni sistem čine tri 
-                         retenzije, 38 crpnih stanica, 2.420 kilometara cevne mreže i 32.892 slivnika.
-                </p>
+            <p id="tekst-onama">
+                Beogradska kanalizacija obuhvata složen tehničko-tehnološki sistem koji se prostire na oko 180
+                kvadratnih kilometara površine grada. Bavi se prikupljanjem i odvođenjem atmosferskih i upotrebljenih
+                voda, održavanjem kanalizacione mreže, nadzorom, upravljanjem i održavanjem elektromašinskih
+                postrojenja
+                i ekološkim monitoringom zaštite kanalizacionog sistema i recipijenta. Kanalizacioni sistem čine tri
+                retenzije, 38 crpnih stanica, 2.420 kilometara cevne mreže i 32.892 slivnika.
+            </p>
         </p>
     </div>
     <footer>
+        <br>
+        <p id="sat" align="center">ovde sat</p>
         <p align="center">Made by: MDN</p>
     </footer>
 

@@ -13,36 +13,39 @@
     <script src="js/kontakt.js"></script>
     <link rel="stylesheet" type="text/css" href="css/index.css">
 
+    <!-- Sat -->
+    <script src="js/sat.js"></script>
+
     <!--Efekat zumiranja-->
-    <script src = "js/jQuery.js"></script>
-	<script>
-	$(Document).ready(function(){
-	
-		$("#aktivan").hover(function(){
-            $("#aktivan").stop().animate({"zoom":"150%"}, 1000);
-        }, function(){
-            $("#aktivan").stop().animate({"zoom":"100%"}, 1000); 
-		})
-		
-		$("#2").hover(function(){
-            $("#2").stop().animate({"zoom":"150%"}, 1000);
-        }, function(){
-            $("#2").stop().animate({"zoom":"100%"}, 1000); 
-		})
-		
-		$("#3").hover(function(){
-            $("#3").stop().animate({"zoom":"150%"}, 1000);
-        }, function(){
-            $("#3").stop().animate({"zoom":"100%"}, 1000); 
-		})
-		
-		$("#1").hover(function(){
-            $("#1").stop().animate({"zoom":"150%"}, 1000);
-        }, function(){
-            $("#1").stop().animate({"zoom":"100%"}, 1000); 
-        })
-	});
-	</script>
+    <script src="js/jQuery.js"></script>
+    <script>
+        $(Document).ready(function () {
+
+            $("#aktivan").hover(function () {
+                $("#aktivan").stop().animate({ "zoom": "150%" }, 1000);
+            }, function () {
+                $("#aktivan").stop().animate({ "zoom": "100%" }, 1000);
+            })
+
+            $("#2").hover(function () {
+                $("#2").stop().animate({ "zoom": "150%" }, 1000);
+            }, function () {
+                $("#2").stop().animate({ "zoom": "100%" }, 1000);
+            })
+
+            $("#3").hover(function () {
+                $("#3").stop().animate({ "zoom": "150%" }, 1000);
+            }, function () {
+                $("#3").stop().animate({ "zoom": "100%" }, 1000);
+            })
+
+            $("#1").hover(function () {
+                $("#1").stop().animate({ "zoom": "150%" }, 1000);
+            }, function () {
+                $("#1").stop().animate({ "zoom": "100%" }, 1000);
+            })
+        });
+    </script>
 </head>
 
 <body onLoad="pripremiFormu()">
@@ -52,7 +55,6 @@
             <div class="container-fluid">
                 <h1 class="display-4">VODOVOD </h1>
                 <!-- <p class="lead">Beograd</p> -->
-
             </div>
         </div>
 
@@ -65,16 +67,24 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item" id="1">
-                        <a class="nav-link" href="index.html"><p>Naslovna</p> <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.html">
+                            <p>Naslovna</p> <span class="sr-only">(current)</span>
+                        </a>
                     </li>
                     <li class="nav-item" id="2">
-                        <a class="nav-link" href="galerija.html"><p>Galerija</p></a>
+                        <a class="nav-link" href="galerija.html">
+                            <p>Galerija</p>
+                        </a>
                     </li>
                     <li class="nav-item" id="3">
-                        <a class="nav-link" href="onama.html"><p>O nama</p></a>
+                        <a class="nav-link" href="onama.html">
+                            <p>O nama</p>
+                        </a>
                     </li>
                     <li class="nav-item active" id="aktivan">
-                        <a class="nav-link" href="#"><p>Kontakt</p></a>
+                        <a class="nav-link" href="#">
+                            <p>Prijavi kvar</p>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -90,45 +100,45 @@
         <br>
 
         <form onsubmit="return validacija()">
+            <div>
+                <br>
+                <div id="greska" class="alert-box">
+                    Forma sadrži sledeće greške:
+                </div>
+                <br>
 
-            <br>
-            <div id="greska" class="alert-box">
-                Forma sadrži sledeće greške:
+                Adresa:
+                <input type="text" name="adresa">
+                <br><br>
+                Kontakt telefon:
+                <input type="text" name="brTel">
+                <br><br>
+                Unesite e-mail adresu:
+                <br>
+                <input type="text" name="mail" size="35">
+                <br><br>
+                Izaberite vrstu kvara:<br><br>
+
+                <input type="radio" name="vrstaKvara" value="k1">Kvar na kanalizacionoj mreži
+                <input type="radio" name="vrstaKvara" value="k2">Kvar na vodovodnoj mreži
+
+                <br><br>Opis kvara:
+                <textarea name="opis" rows="5" cols="20"> </textarea>
+                <br><br>
+                Upload slike:
+                <br>
+                <INPUT type="file" class="btn btn-outline-primary" name="file">
+                <br>
+                <br>
+
+                <INPUT type="button" class="btn btn-outline-primary" value="Prijavi kvar" name="submit" onclick="validacija()">
+                <INPUT type="reset" class="btn btn-outline-primary" value="Obrisi podatke" name="reset">
             </div>
-            <br>
-
-            Adresa:
-            <input type="text" name="adresa">
-            <br><br>
-            Kontakt telefon:
-            <input type="text" name="brTel">
-            <br><br>
-            Unesite e-mail adresu:
-            <br>
-            <input type="text" name="mail" size="35">
-            <br><br>
-            Izaberite vrstu kvara:<br><br>
-
-            <input type="radio" name="vrstaKvara" value="k1">Kvar na kanalizacionoj mreži
-            <input type="radio" name="vrstaKvara" value="k2">Kvar na vodovodnoj mreži
-         
-            <br><br>Opis kvara:
-            <textarea name="opis" rows="5" cols="20">
-
-            </textarea>
-            <br><br>
-            Upload slike:
-            <br>
-            <INPUT type="file" class="btn btn-outline-primary" name="file">
-            <br>
-            <br>
-
-            <INPUT type="button" class="btn btn-outline-primary" value="Prijavi kvar" name="submit" onclick="validacija()">
-            <INPUT type="reset" class="btn btn-outline-primary" value="Obrisi podatke" name="reset">
         </form>
     </div>
 
     <footer>
+        <br>
         <p align="center">Made by: MDN</p>
     </footer>
 </body>

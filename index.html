@@ -2,126 +2,134 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Vodovod</title>
 	<link rel="shortcut icon" type="images/x-ico" href="img/kapljica-ikona.ico">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	 crossorigin="anonymous">
 
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 
-	<script src = "js/jQuery.js"></script>
+	<script src="js/jQuery.js"></script>
 	<script>
-	$(Document).ready(function(){
-	
-		$("#aktivan").hover(function(){
-            $("#aktivan").stop().animate({"zoom":"150%"}, 1000);
-        }, function(){
-            $("#aktivan").stop().animate({"zoom":"100%"}, 1000); 
-		})
-		
-		$("#2").hover(function(){
-            $("#2").stop().animate({"zoom":"150%"}, 1000);
-        }, function(){
-            $("#2").stop().animate({"zoom":"100%"}, 1000); 
-		})
-		
-		$("#3").hover(function(){
-            $("#3").stop().animate({"zoom":"150%"}, 1000);
-        }, function(){
-            $("#3").stop().animate({"zoom":"100%"}, 1000); 
-		})
-		
-		$("#4").hover(function(){
-            $("#4").stop().animate({"zoom":"150%"}, 1000);
-        }, function(){
-            $("#4").stop().animate({"zoom":"100%"}, 1000); 
-        })
-	});
+		$(Document).ready(function () {
+
+			$("#aktivan").hover(function () {
+				$("#aktivan").stop().animate({ "zoom": "150%" }, 1000);
+			}, function () {
+				$("#aktivan").stop().animate({ "zoom": "100%" }, 1000);
+			})
+
+			$("#2").hover(function () {
+				$("#2").stop().animate({ "zoom": "150%" }, 1000);
+			}, function () {
+				$("#2").stop().animate({ "zoom": "100%" }, 1000);
+			})
+
+			$("#3").hover(function () {
+				$("#3").stop().animate({ "zoom": "150%" }, 1000);
+			}, function () {
+				$("#3").stop().animate({ "zoom": "100%" }, 1000);
+			})
+
+			$("#4").hover(function () {
+				$("#4").stop().animate({ "zoom": "150%" }, 1000);
+			}, function () {
+				$("#4").stop().animate({ "zoom": "100%" }, 1000);
+			})
+		});
 	</script>
 </head>
 
-<body>
-
-    <header>
+<body onload="prikazisat()">
 
 
-        <div class="jumbotron jumbotron-fluid" style="background-image: url(img/ovo.jpg); background-size: 100%;" id="jumbo">
-            <div class="container-fluid">
-                <h1 class="display-4">VODOVOD </h1>
-                <!-- <p class="lead">Beograd</p> -->
+	<header>
 
-            </div>
-        </div>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-end">
-            <!-- <a class="navbar-brand" href="#">Meni</a> -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mr-auto">
+		<div class="jumbotron jumbotron-fluid" style="background-image: url(img/ovo.jpg); background-size: 100%;" id="jumbo">
+			<div class="container-fluid">
+				<h1 class="display-4">VODOVOD </h1>
+				<!-- <p class="lead">Beograd</p> -->
+
+			</div>
+		</div>
+
+		<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-end">
+			<!-- <a class="navbar-brand" href="#">Meni</a> -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+			 aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav mr-auto">
 					<li class="nav-item active" id="aktivan">
-                        <a class="nav-link" href="#"><p>Naslovna</p> <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item" id="2">
-                        <a class="nav-link" href="galerija.html"><p>Galerija</p></a>
-                    </li>
-                    <li class="nav-item" id="3">
-                        <a class="nav-link" href="onama.html"><p>O nama</p></a>
-                    </li>
-                    <li class="nav-item" id="4"> 
-                        <a class="nav-link" href="kontakt.html"><p>Kontakt</p></a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+						<a class="nav-link" href="#">
+							<p>Naslovna</p> <span class="sr-only">(current)</span>
+						</a>
+					</li>
+					<li class="nav-item" id="2">
+						<a class="nav-link" href="galerija.html">
+							<p>Galerija</p>
+						</a>
+					</li>
+					<li class="nav-item" id="3">
+						<a class="nav-link" href="onama.html">
+							<p>O nama</p>
+						</a>
+					</li>
+					<li class="nav-item" id="4">
+						<a class="nav-link" href="kontakt.html">
+							<p>Prijavi kvar</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
 
 
-    </header>
+	</header>
 
-    <div id="naslovneVesti" class="naslovneVesti">
-			<h1>Vesti</h1>
-			<hr align="left">
-			
-			<a class="link" href="#">
-			<div class="vest">			
+	<div id="naslovneVesti" class="naslovneVesti">
+		<h1>Vesti</h1>
+		<hr align="left">
+
+		<a class="link" href="#">
+			<div class="vest">
 				<div class="vest-slika">
 					<img src="img/rekonstrukcije-vm-brace-jerkovic.jpg" alt="">
 				</div>
 				<div>
 					<h3>Nove vodovodne cevi u Braće Jerković</h3>
-					<p>Duž Ulice Braće Jerković izvode se radovi na obnavljanju vodovodne mreže. 
-						Nove duktilne cevi (prečnika 150 milimetara) zameniće stare azbestno-cementne (prečnika 80 milimetara), 
+					<p>Duž Ulice Braće Jerković izvode se radovi na obnavljanju vodovodne mreže.
+						Nove duktilne cevi (prečnika 150 milimetara) zameniće stare azbestno-cementne (prečnika 80 milimetara),
 						u dužini od 1600 metara.<br><br>
 						Radovi će trajati do kraja marta 2019. godine. </p>
 
 				</div>
-			
+
 			</div>
 			<div class="vest flex-reverse">
 				<div class="vest-slika">
-					<img src="img/vest2.jpg"
-					 alt="">
+					<img src="img/vest2.jpg" alt="">
 				</div>
 				<div>
 					<h3>Vodovod na Međunarodnom sajmu i forumu voda 2018</h3>
-					<p>Deseti po redu „Međunarodni sajam i forum voda 2018“ održava se od 14. do 16. novembra 
-						u „Belekspocentru“ i hotelu „Holidej In“ u Beogradu, u organizaciji Udruženja za tehnologiju vode 
+					<p>Deseti po redu „Međunarodni sajam i forum voda 2018“ održava se od 14. do 16. novembra
+						u „Belekspocentru“ i hotelu „Holidej In“ u Beogradu, u organizaciji Udruženja za tehnologiju vode
 						i sanitarno inženjerstvo (UTVSI).
 						<br><br>
-						Osnovne teme ovogodišnjeg Foruma odnose se na otpornost i održivost sistema, jačanje vodnog sektora 
-						u jugoistočnoj Evropi i unapređenju regionalne saradnje. U sklopu Foruma voda 2018 održan 
-						je i Okrugli sto posvećen unapređenju institucionalnog okvira vodnog sektora. 
+						Osnovne teme ovogodišnjeg Foruma odnose se na otpornost i održivost sistema, jačanje vodnog sektora
+						u jugoistočnoj Evropi i unapređenju regionalne saradnje. U sklopu Foruma voda 2018 održan
+						je i Okrugli sto posvećen unapređenju institucionalnog okvira vodnog sektora.
 						<br><br>
-						Ovogodišnji sajam voda okuplja na jednom mestu proizvođače i distributere opreme, uređaja i 
-						hemikalija, predstavnike naučnih institucija, projektantskih firmi, vodoprivrednih i 
-						javnih komunalnih preduzeća, koji predstavljaju najsavremenija rešenja, proizvode i 
+						Ovogodišnji sajam voda okuplja na jednom mestu proizvođače i distributere opreme, uređaja i
+						hemikalija, predstavnike naučnih institucija, projektantskih firmi, vodoprivrednih i
+						javnih komunalnih preduzeća, koji predstavljaju najsavremenija rešenja, proizvode i
 						pametne tehnologije iz ove oblasti.
 					</p>
 				</div>
@@ -129,14 +137,13 @@
 			</div>
 			<div class="vest">
 				<div class="vest-slika">
-					<img src="img/vest3.jpg"
-					 alt="">
+					<img src="img/vest3.jpg" alt="">
 				</div>
 				<div>
 					<h3>Rekonstrukcija vodovodne mreže na Karaburmi</h3>
-					<p>U Lipetskoj ulici na Paliluli izvode se radovi na zameni starih vodovodnih cevi. 
-						Nove duktilne cevi (prečnika 150 milimetara) zameniće stare azbestno-cementne 
-						(prečnika 80 i 100 milimetara) u dužini od 250 metara. Projektom je predviđeno i 
+					<p>U Lipetskoj ulici na Paliluli izvode se radovi na zameni starih vodovodnih cevi.
+						Nove duktilne cevi (prečnika 150 milimetara) zameniće stare azbestno-cementne
+						(prečnika 80 i 100 milimetara) u dužini od 250 metara. Projektom je predviđeno i
 						izvođenje novih priključaka. <br><br>
 						Radovi će trajati do početka decembra 2018. godine. </p>
 				</div>
@@ -144,12 +151,13 @@
 			</div>
 		</a>
 
-		</div>
+	</div>
 
 
-    <footer>
-        <p align="center">Made by: MDN</p>
-    </footer>
+	<footer>
+		<br>
+		<p align="center">Made by: MDN</p>
+	</footer>
 </body>
 
 </html>
