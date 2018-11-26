@@ -444,3 +444,30 @@ form {
 	visibility: hidden;
 }
 
+/*O NAMA*/
+
+
+#tekst-onama{
+	margin-left: 20%;
+	margin-right: 20%;
+}
+h2 {
+	text-align: center;
+}
+#kontakt {
+	text-align: center;
+}
+#onama1{
+	margin-left: 20%;
+	width: 60%;
+}
+#naslov1{
+	margin-left: 20%;
+	font-size: 30px;
+	color:black;
+}
+#onama2{
+	margin-left: 20%;
+	width: 60%;
+	height: 300px;
+}
