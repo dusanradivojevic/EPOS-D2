@@ -1,12 +1,11 @@
 # Vodovod-EPOS
-Primer veb sajta za preduzeće koje se bavi vodosnabdevanjem.
+Instance of website designed for water supply company.
 
-## Opis
-Ovaj sajt je urađen u sklopu predmeta Elektronsko poslovanje na Fakultetu organizacionih nauka.
+## Description
+This website is implemented within faculty course.
 
-
-## Pregled
-Sajt možete pogledati klikom na <a href="https://dusanradivojevic.github.io/Vodovod-EPOS/" target="_blank">link</a>.
+## Preview
+Checkout website by clicking on the <a href="https://dusanradivojevic.github.io/Vodovod-EPOS/" target="_blank">link</a>.
 
 
 
